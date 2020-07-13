@@ -1,72 +1,64 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        la puchy
-      </h1>
-      <h2 class="subtitle">
-        My astonishing Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+     <sidebar/>
+
+     <jumbotron/>
+
+
+
+
+      <b-card bg-variant="dark margin" text-variant="white" title="Card Title">
+        <b-card-text>With supporting text below as a natural lead-in to additional content.</b-card-text>
+        <b-button href="#" variant="primary">Go somewhere</b-button>
+      </b-card>
+
+
+
+
+      <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+        <b-row no-gutters>
+          <b-col md="6">
+            <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
+          </b-col>
+          <b-col md="6">
+            <b-card-body title="Horizontal Card">
+              <b-card-text>
+                This is a wider card with supporting text as a natural lead-in to additional content.
+                This content is a little bit longer.
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Jumbotron from "~/components/Jumbotron.vue";
+import Sidebar from "~/components/Sidebar.vue";
+
 
 export default {
   components: {
-    Logo
+    Jumbotron,Sidebar
   }
-}
+};
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.margin{
+  margin: 20px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.carousel-inner {
+  height: 100vh;
 }
 </style>
