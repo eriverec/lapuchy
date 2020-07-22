@@ -1,13 +1,12 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="warning">
       <b-navbar-brand href="#">
         <b-img v-bind="mainProps" rounded="circle" alt="Circle image" src="~/static/iconnavbar.png"></b-img> PUCHY
       </b-navbar-brand>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-button v-b-toggle.sidebar-right>
-          <b-icon icon="grid3x3-gap"></b-icon>
+        <b-button v-b-toggle.sidebar-right>MENU
         </b-button>
       </b-navbar-nav>
     </b-navbar>

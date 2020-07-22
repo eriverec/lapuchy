@@ -1,20 +1,14 @@
 <template>
   <div class="container">
     <div>
-     <sidebar/>
+     <!--<sidebar/>-->
 
      <jumbotron/>
-
-
-
-
+<!--
       <b-card bg-variant="dark margin" text-variant="white" title="Card Title">
         <b-card-text>With supporting text below as a natural lead-in to additional content.</b-card-text>
         <b-button href="#" variant="primary">Go somewhere</b-button>
       </b-card>
-
-
-
 
       <b-card no-body class="overflow-hidden" style="max-width: 540px;">
         <b-row no-gutters>
@@ -30,7 +24,7 @@
             </b-card-body>
           </b-col>
         </b-row>
-      </b-card>
+      </b-card>-->
     </div>
   </div>
 </template>
@@ -46,19 +40,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.container {
-  max-width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.margin{
-  margin: 20px;
-}
-
-.carousel-inner {
-  height: 100vh;
-}
-</style>
