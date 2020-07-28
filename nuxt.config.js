@@ -18,6 +18,12 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
+
+    script: [{
+      src: 'https://www.googletagmanager.com/gtag/js?id=UA-173964694-1',
+      async: true
+    }],
+    
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
@@ -43,7 +49,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{
+    src: '~plugins/ga.js',
+    mode: 'client'
+  }],
   /*
    ** Nuxt.js modules
    */
