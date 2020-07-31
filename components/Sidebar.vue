@@ -1,32 +1,39 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="warning">
+    <!--<b-navbar toggleable="lg" type="dark" variant="warning">
       <b-navbar-brand href="#">
         <b-img v-bind="mainProps" rounded="circle" alt="Circle image" src="~/static/iconnavbar.png"></b-img> PUCHY
       </b-navbar-brand>
-      <!-- Right aligned nav items -->
+  
       <b-navbar-nav class="ml-auto">
         <b-button v-b-toggle.sidebar-right>MENU
         </b-button>
       </b-navbar-nav>
-    </b-navbar>
+    </b-navbar>-->
 
-    <b-sidebar id="sidebar-right" title="Puchy" :backdrop-variant="variant" backdrop right shadow>
+    <b-sidebar id="sidebar-right" :backdrop-variant="variant" backdrop right shadow>
       <template v-slot:default="{ hide }">
         <div class="p-3">
-          <h4 id="sidebar-no-header-title">Custom header sidebar</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
+          <h4 id="sidebar-no-header-title"><strong>PUCHY</strong> </h4>
+
           <nav class="mb-3">
             <b-nav vertical>
-              <b-nav-item active @click="hide">Active</b-nav-item>
-              <b-nav-item href="#link-1" @click="hide">Link</b-nav-item>
-              <b-nav-item href="#link-2" @click="hide">Another Link</b-nav-item>
+              <b-nav-item @click="hide">
+                <nuxt-link to="/platos">Platos</nuxt-link>
+              </b-nav-item>
+              <b-nav-item @click="hide">
+                <nuxt-link to="/menu">
+                  Menu de la semana
+                </nuxt-link>
+              </b-nav-item>
+
+              <b-button v-b-modal.modal-1>Sobre nosotros</b-button>
+
+              <b-modal id="modal-1" title="Sobre nosotros">
+                <p class="my-4">Este es su mejor elección en comidas</p>
+              </b-modal>
             </b-nav>
           </nav>
-          <b-button variant="primary" block @click="hide">Close Sidebar</b-button>
         </div>
       </template>
     </b-sidebar>
@@ -41,8 +48,8 @@ export default {
         width: 30,
         height: 30,
       },
-      variant: "dark"
+      variant: "dark",
     };
-  }
+  },
 };
 </script>

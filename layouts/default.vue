@@ -20,7 +20,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("../static/fondo.jpg");
+ /* background-image: url("../static/fondo2.jpg");
+  background-size: cover;*/
 }
 .container {
   max-width: 100%;

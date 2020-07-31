@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div>
-     <!--<sidebar/>-->
+      <sidebar/>
 
-     <jumbotron/>
-<!--
+      <jumbotron />
+      <!--
       <b-card bg-variant="dark margin" text-variant="white" title="Card Title">
         <b-card-text>With supporting text below as a natural lead-in to additional content.</b-card-text>
         <b-button href="#" variant="primary">Go somewhere</b-button>
@@ -29,15 +29,29 @@
   </div>
 </template>
 
+
+<style >
+.container {
+  background-image: url("../static/fondo2.jpg");
+  background-size: cover;
+}
+</style>
+
 <script>
 import Jumbotron from "~/components/Jumbotron.vue";
 import Sidebar from "~/components/Sidebar.vue";
 
-
 export default {
-  transition: "bounce",
+  asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  },
   components: {
-    Jumbotron,Sidebar
-  }
+    Jumbotron,
+    Sidebar,
+  },
 };
 </script>

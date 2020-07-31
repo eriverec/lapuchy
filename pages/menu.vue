@@ -30,9 +30,8 @@
 
                   <b-icon icon="check2-square" font-scale="1"></b-icon>Mixto (Camarón, pescado curtido, calamar y pulpo.)
                   <b-badge variant="warning">${{ sum }}</b-badge>
-                  <br /> 
+                  <br />
                   <b-alert show variant="info">
-              
                     <b-form-checkbox
                       switch
                       id="checkbox-2"
@@ -49,63 +48,64 @@
             </b-col>
             <b-col>
               <b-card class="mb-2">
-                 <template v-slot:header>
-                  <h4 class="mb-0">Bolones </h4>
+                <template v-slot:header>
+                  <h4 class="mb-0">Bolones</h4>
                 </template>
                 <b-card-text>
                   <h3>Asesineytor (Grande)</h3>
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Queso
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Queso
                   <b-badge variant="warning">$3</b-badge>
                   <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Chicharrón 
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Chicharrón
                   <b-badge variant="warning">$3</b-badge>
                   <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Mixto
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Mixto
                   <b-badge variant="warning">$4</b-badge>
-                  <br /> <br>
+                  <br />
+                  <br />
 
-                  <h3>kryptoniano (Normal) </h3>
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Queso
+                  <h3>kryptoniano (Normal)</h3>
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Queso
                   <b-badge variant="warning">$2.50</b-badge>
                   <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Chicharrón
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Chicharrón
                   <b-badge variant="warning">$2.50</b-badge>
                   <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Mixto
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Mixto
                   <b-badge variant="warning">$3</b-badge>
-                  <br> <br>
+                  <br />
+                  <br />
 
                   <b-alert show variant="success">
                     <strong>Adicioneales</strong>
                     <br />
-                    <b-icon icon="check2-square" font-scale="1"></b-icon> Porción de bistec
-                  <b-badge variant="warning">$1.50</b-badge>
-                  <br />
+                    <b-icon icon="check2-square" font-scale="1"></b-icon>Porción de bistec
+                    <b-badge variant="warning">$1.50</b-badge>
+                    <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Huevo frito
-                  <b-badge variant="warning">$0.50</b-badge>
-                  <br />
+                    <b-icon icon="check2-square" font-scale="1"></b-icon>Huevo frito
+                    <b-badge variant="warning">$0.50</b-badge>
+                    <br />
                   </b-alert>
                 </b-card-text>
               </b-card>
             </b-col>
-             <b-col>
+            <b-col>
               <b-card class="mb-2">
                 <template v-slot:header>
                   <h4 class="mb-0">Copa mexicana bajo pedido</h4>
                 </template>
                 <b-card-text>
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Pequeña
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Pequeña
                   <b-badge variant="warning">$8</b-badge>
                   <br />
 
-                  <b-icon icon="check2-square" font-scale="1"></b-icon> Grande
+                  <b-icon icon="check2-square" font-scale="1"></b-icon>Grande
                   <b-badge variant="warning">$20</b-badge>
-                               
 
                   <b-alert show variant="warning">Todos los Ceviches Mixtos incluyen chifles</b-alert>
                 </b-card-text>
@@ -144,9 +144,15 @@
 }
 </style>
 
-
 <script>
 export default {
+ asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  },
   data() {
     return {
       checkedNumbers: [],

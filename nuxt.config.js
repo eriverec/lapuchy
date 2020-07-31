@@ -1,11 +1,5 @@
 export default {
-  pageTransition: {
-    name: 'page',
-    mode: 'out-in',
-    beforeEnter (el) {
-      console.log('Before enter...');
-    }
-  },
+
   /*
    ** Headers of the page
    */
@@ -45,14 +39,12 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: {
-    color: 'blue',
-    height: '5px'
-  },
+  loading: {color: 'black',height: '3px'},
+  //loading: '~/components/loading.vue',
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/main.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -64,6 +56,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    ['@neneos/nuxt-animate.css'],
     ['bootstrap-vue/nuxt', {
       icons: true,
     }],
