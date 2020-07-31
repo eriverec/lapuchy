@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div>
+ 
+    <div class="toperi">
+      
       <b-jumbotron bg-variant="dark" text-variant="white" class="margin">
         <template v-slot:header>Menu fin de semana</template>
 
@@ -13,10 +14,10 @@
       </b-jumbotron>
       <div class="centermenu">
         <b-container fluid>
-          <b-row cols="1" cols-sm="2" cols-md="2" cols-lg="3">
+          <b-row cols="1" cols-sm="1" cols-md="1" cols-lg="3">
             <b-col>
               <b-card class="mb-2">
-                <template v-slot:header>
+                <template variant="primary" v-slot:header>
                   <h4 class="mb-0">Ceviches</h4>
                 </template>
                 <b-card-text>
@@ -106,8 +107,6 @@
 
                   <b-icon icon="check2-square" font-scale="1"></b-icon>Grande
                   <b-badge variant="warning">$20</b-badge>
-
-                  <b-alert show variant="warning">Todos los Ceviches Mixtos incluyen chifles</b-alert>
                 </b-card-text>
               </b-card>
             </b-col>
@@ -115,11 +114,14 @@
         </b-container>
       </div>
     </div>
-  </div>
+
 </template>
 
 
 <style >
+.toperi{
+  margin-top: 80px;
+}
 .centermenu {
   margin: auto;
   width: 90%;

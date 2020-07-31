@@ -1,8 +1,18 @@
 <template>
   <div>
+    <sidebar/>
     <nuxt />
   </div>
 </template>
+
+<script>
+import Sidebar from "~/components/Sidebar.vue";
+export default {
+  components: {
+    Sidebar,
+  },
+}
+</script>
 
 
 <style>
@@ -22,7 +32,16 @@ body {
   font-family: "Montserrat", sans-serif;
  /* background-image: url("../static/fondo2.jpg");
   background-size: cover;*/
+  
 }
+
+.navbar{
+  background:white;
+  moz-box-shadow: 3px -2px 10px 0px #ccc;
+    -webkit-box-shadow: 3px -2px 10px 0px #ccc;
+    box-shadow: 3px -2px 10px 0px #333;
+}
+
 .container {
   max-width: 100%;
   margin: 0px;

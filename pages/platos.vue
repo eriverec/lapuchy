@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div>
-      <b-jumbotron class="margin">
+
+    <div class="toperi">
+      <b-jumbotron bg-variant="warning" text-variant="white" class="margin">
         <template v-slot:header>Platos</template>
 
         <template v-slot:lead>Este es un listado de platos a su elección</template>
         <nuxt-link to="/">
-          <b-button variant="primary">Regresar al inicio</b-button>
+          <b-button variant="dark">Regresar al inicio</b-button>
         </nuxt-link>
       </b-jumbotron>
       <div class="centermenu">
@@ -106,7 +106,7 @@
         </b-container>
       </div>
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -121,6 +121,10 @@ export default {
 }
 </script>
 <style >
+
+.toperi{
+  margin-top: 80px;
+}
 .centermenu {
   margin: auto;
   width: 90%;
