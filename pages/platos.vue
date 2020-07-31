@@ -2,13 +2,12 @@
   <div>
     <div>
       <b-jumbotron class="margin">
-        <template v-slot:header>Menu de la semana</template>
+        <template v-slot:header>Platos</template>
 
-        <template v-slot:lead>
-          This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-          featured content or information.
-        </template>
-
+        <template v-slot:lead>Este es un listado de platos a su elección</template>
+        <nuxt-link to="/">
+          <b-button variant="primary">Regresar al inicio</b-button>
+        </nuxt-link>
       </b-jumbotron>
       <div class="centermenu">
         <b-container fluid>
@@ -58,7 +57,7 @@
                 <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </b-col>
-             <b-col>
+            <b-col>
               <b-card
                 title="Card Title"
                 img-src="https://picsum.photos/600/300/?image=25"
@@ -73,7 +72,7 @@
                 <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </b-col>
-             <b-col>
+            <b-col>
               <b-card
                 title="Card Title"
                 img-src="https://picsum.photos/600/300/?image=25"
@@ -88,7 +87,7 @@
                 <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </b-col>
-             <b-col>
+            <b-col>
               <b-card
                 title="Card Title"
                 img-src="https://picsum.photos/600/300/?image=25"
@@ -104,7 +103,6 @@
               </b-card>
             </b-col>
           </b-row>
-          
         </b-container>
       </div>
     </div>
@@ -112,6 +110,11 @@
 </template>
 
 
+<script>
+export default {
+  transition: "bounce",
+};
+</script>
 <style >
 .centermenu {
   margin: auto;
@@ -123,7 +126,7 @@
   max-width: none !important;
 }
 
-.margin{
+.margin {
   margin: 20px;
 }
 
@@ -134,5 +137,9 @@
 .container-xl {
   padding-right: 0px !important;
   padding-left: 0px !important;
+}
+
+.display-3 {
+  font-size: 45px;
 }
 </style>

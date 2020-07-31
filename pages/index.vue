@@ -35,6 +35,7 @@ import Sidebar from "~/components/Sidebar.vue";
 
 
 export default {
+  transition: "bounce",
   components: {
     Jumbotron,Sidebar
   }
