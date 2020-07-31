@@ -1,16 +1,15 @@
 <template>
-
-    <div class="todocentrado">
-      <h3>Bienvenido a</h3>
-      <h1>
-        <strong>La Sazón De La Puchy</strong>
-      </h1>
-      <b-button variant="warning" v-b-toggle.sidebar-right>
-        <b-icon icon="chevron-double-right"></b-icon> Menu
+  <div class="todocentrado">
+    <h3>Bienvenido a</h3>
+    <h1>
+      <strong>La Sazón De La Puchy</strong>
+    </h1>
+    <nuxt-link to="/menu">
+      <b-button variant="warning">
+        <strong>Ir al menú del fin de semana</strong>
       </b-button>
- 
-    </div>
-
+    </nuxt-link>
+  </div>
 </template>
 
 <style>

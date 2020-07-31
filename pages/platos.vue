@@ -1,7 +1,7 @@
 <template>
 
     <div class="toperi">
-      <b-jumbotron bg-variant="warning" text-variant="white" class="margin">
+      <b-jumbotron bg-variant="danger" text-variant="white" class="margin">
         <template v-slot:header>Platos</template>
 
         <template v-slot:lead>Este es un listado de platos a su elección</template>
