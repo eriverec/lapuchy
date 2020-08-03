@@ -2,21 +2,21 @@
   <div>
     <b-navbar fixed="top" toggleable="lg" type="light" variant="faded">
       <b-navbar-brand to="/">
-        <strong>P U C H Y</strong> 
+      <img src="~/static/iconnavbar.png" class="d-inline-block align-top" alt="puchy">
+        <strong>P U C H Y</strong>
       </b-navbar-brand>
-  
+
       <b-navbar-nav class="ml-auto">
-        <b-button variant="light" v-b-toggle.sidebar-right>
-          <b-icon icon="chevron-double-left"></b-icon>
-        </b-button>
+        <a variant="light" v-b-toggle.sidebar-right>
+          <b-icon font-scale="2" icon="list"></b-icon>
+        </a>
       </b-navbar-nav>
     </b-navbar>
 
     <b-sidebar id="sidebar-right" :backdrop-variant="variant" backdrop no-header right shadow>
-      <template v-slot:footer="{ hide }">
-        <div class="d-flex bg-dark text-light align-items-center px-3 py-2">
-          <strong class="mr-auto">Footer</strong>
-          <b-button size="sm" @click="hide">Close</b-button>
+      <template v-slot:footer="{}">
+        <div class="d-flex bg-dark text-light align-items-center px-2 py-2">
+          <div class="m-auto fs">© 2020 Puchy By Eri Vera</div>
         </div>
       </template>
       <template v-slot:default="{ hide }">
@@ -33,29 +33,45 @@
                 </nuxt-link>
               </b-nav-item>
               <b-nav-item @click="hide">
-                <nuxt-link class="text-info" to="/platos">
-                  <strong>Platos</strong>
-                </nuxt-link>
-              </b-nav-item>
-              <b-nav-item @click="hide">
                 <nuxt-link class="text-info" to="/menu">
-                  <strong>Menu de la semana</strong>
+                  <strong>Menú fin de semana</strong>
                 </nuxt-link>
               </b-nav-item>
             </b-nav>
           </nav>
 
           <b-alert show variant="info">
-            Servicio a domicilio solo <strong>Norte</strong>  <b-badge variant="success">$2</b-badge><br>
-            Número de contacto <br>
-            <h5><b-badge variant="dark">+593 963150913</b-badge></h5>
-            
+            Servicio a domicilio solo
+            <strong>Norte</strong>
+            <b-badge variant="success">$2</b-badge>
+            <br />Número de contacto
+            <br />
+            <h5>
+              <b-badge variant="dark">+593 963150913</b-badge>
+              <b-button pill size="sm" class="" variant="outline-secondary">
+                <a href="https://api.whatsapp.com/send?phone=593963150913&text=Hola,%20quiero%20un%20pedido!" target="_blank">
+                  <img src="https://img.icons8.com/windows/24/000000/whatsapp.png" />
+                </a>
+              </b-button>
+            </h5>
           </b-alert>
         </div>
       </template>
     </b-sidebar>
   </div>
 </template>
+
+<style>
+.fs {
+  font-size: 13px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.align-top{
+  width: 30px;
+}
+</style>
 
 
 <script>

@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
-    <div>
-      
+  <div class="container ">
+    <div>     
       <jumbotron /> 
     </div>
   </div>
@@ -12,14 +11,21 @@
 .container {
   background-image: url("../static/fondo2.jpg");
   background-size: cover;
+  
 }
 </style>
 
 <script>
 import Jumbotron from "~/components/Jumbotron.vue";
-import Sidebar from "~/components/Sidebar.vue";
 
 export default {
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
+  },
   asyncData () {
     return new Promise((resolve) => {
       setTimeout(function () {
@@ -28,8 +34,7 @@ export default {
     })
   },
   components: {
-    Jumbotron,
-    Sidebar,
+    Jumbotron
   },
 };
 </script>
