@@ -103,7 +103,7 @@
           <b-col>
             <b-card
               title="Copa Mexicana"
-              img-src="~/static/copa.jpeg"
+              img-src="~/static/copaaa.jpg"
               img-alt="Image"
               img-top
               tag="article"
@@ -134,6 +134,10 @@
 
 
 <style >
+.card-img, .card-img-top, .card-img-bottom{
+      height: 200px;
+    object-fit: cover;
+}
 .toperi {
   margin-top: 80px;
 }
