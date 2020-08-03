@@ -2,7 +2,7 @@
   <div>
     <b-navbar fixed="top" toggleable="lg" type="light" variant="faded">
       <b-navbar-brand to="/">
-      <img src="~/static/iconnavbar.png" class="d-inline-block align-top" alt="puchy">
+      <img src="~/static/iconnavbar2.png" class="d-inline-block align-top" alt="puchy">
         <strong>P U C H Y</strong>
       </b-navbar-brand>
 
