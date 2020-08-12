@@ -71,6 +71,14 @@
 .align-top{
   width: 30px;
 }
+
+a, a:visited{
+  color: black;
+
+}
+a:hover{
+  color: black;
+}
 </style>
 
 
