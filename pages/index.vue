@@ -11,6 +11,7 @@
 .container {
   background-image: url("../static/fondo2.jpg");
   background-size: cover;
+
   
 }
 </style>

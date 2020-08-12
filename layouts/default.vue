@@ -46,6 +46,9 @@ body {
   max-width: 100%;
   margin: 0px;
   padding: 0px;
+  
+overflow-y: hidden;
+overflow-x: hidden ;
 }
 
 *,
