@@ -78,6 +78,7 @@ a, a:visited{
 }
 a:hover{
   color: black;
+  text-decoration: none;
 }
 </style>
 

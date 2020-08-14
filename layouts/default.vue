@@ -37,7 +37,7 @@ body {
 
 .navbar{
   background:white;
-  moz-box-shadow: 3px -2px 10px 0px #ccc;
+    -moz-box-shadow: 3px -2px 10px 0px #ccc;
     -webkit-box-shadow: 3px -2px 10px 0px #ccc;
     box-shadow: 3px -2px 10px 0px #333;
 }

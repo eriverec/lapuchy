@@ -9,7 +9,7 @@
 
 <style >
 .container {
-  background-image: url("../static/fondo2.jpg");
+  background-image: url("../static/fondocuatro.jpg");
   background-size: cover;
 
   

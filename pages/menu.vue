@@ -9,7 +9,7 @@
     </b-jumbotron>
     <div class="centermenu">
       <b-container fluid>
-        <b-row cols="1" cols-sm="1" cols-md="1" cols-lg="3">
+        <b-row cols="1" cols-sm="1" cols-md="2" cols-lg="2">
           <b-col>
             <b-card
               title="Bolones"
@@ -62,6 +62,8 @@
                 </b-alert>
               </b-card-text>
             </b-card>
+
+            
           </b-col>
           <b-col>
             <b-card
@@ -126,6 +128,29 @@
               </b-card-text>
             </b-card>
           </b-col>
+          <b-col>
+            <b-card
+              title="Canastillas"
+              img-src="~/static/cama.jpeg"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem; "
+              class="mb-2"
+            >
+              <b-card-text>
+                <b-icon icon="check2-square" font-scale="1"></b-icon> Normal
+                <b-badge variant="warning">$5</b-badge>
+                <br />
+
+              
+              </b-card-text>
+            </b-card>
+          </b-col>
+
+          <div>
+
+</div>
         </b-row>
       </b-container>
     </div>
@@ -149,12 +174,17 @@
 .mb-2 {
   margin: 10px;
   max-width: none !important;
+  background: white;
+  box-shadow: 3px 7px 8px -3px #ddd;
 }
 
 .margin {
   margin: 20px;
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  text-align: center;
+    text-transform: uppercase;
+
 }
 
 .container-fluid,
